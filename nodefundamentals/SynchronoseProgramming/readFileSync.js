@@ -3,4 +3,7 @@ const filePath ="../static/lengthyFile.txt";
 const start =Date.now();
 const data = fs.readFileSync(filePath,'utf-8');
 
-console.log(`File read in ${Date.now - start} ms`);
+console.log(`File reading completed in ${Date.now() - start} ms`);
+for(let i=0;i<10;i++){
+    console.log("doing work",i);
+}
