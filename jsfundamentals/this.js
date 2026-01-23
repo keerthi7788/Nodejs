@@ -64,6 +64,8 @@ const person2 ={
 }
 grt.call(person)
 grt.apply(person2)
+const grtBind = grt.bind(person2);
+grtBind();
 
 /*output explanation
 Step 1️⃣ — obj3.greet()
@@ -86,17 +88,17 @@ this === obj3
 this.name === "jay"
 
 
-✅ Output:
+Output:
 
 hello jay
 
-Step 2️⃣ — const grt3 = obj3.greet
+Step 2️ — const grt3 = obj3.greet
 
-⚠️ THIS is the key moment.
+ THIS is the key moment.
 
 What exactly is stored in grt3?
 
-👉 ONLY the function, nothing else.
+ ONLY the function, nothing else.
 
 Think of it like this:
 
@@ -105,10 +107,10 @@ grt3 = function () {
 }
 
 
-🚨 NO object is attached
-🚨 NO memory of obj3
+ NO object is attached
+ NO memory of obj3
 
-Step 3️⃣ — grt3()
+Step 3️ — grt3()
 
 Now look at the call:
 
@@ -120,9 +122,9 @@ Call shape:
 function()
 
 
-❓ Is there an object before the dot?
+Is there an object before the dot?
 
-❌ No
+ No
 
 
 So JavaScript says:
