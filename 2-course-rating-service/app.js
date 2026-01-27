@@ -2,7 +2,7 @@
 
 const express =require('express')
 
-const app=express();
+const app = express();
 app.get('/',(req,res) => {
     console.log("Request received at / endpoint");
     res.send("hellow world")
@@ -16,3 +16,7 @@ app.get('/',(req,res) => {
  - ip identofies the multiple running service os should send req to port
  -To specify the network port on which the server listens for incoming requests.
  */
+app.get('/api/v1/course-rating',(req,res) => {
+    console.log("Request received at /api/v1/course-rating endpoint");
+    res.send("Course rating API");
+})
