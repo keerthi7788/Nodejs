@@ -49,3 +49,14 @@ app.get('/api/v1/course-rating', (req, res) => {
     res.send("Course rating API");
 });
 //generally we have env file so we will use env to keep all the env variables.
+/* 
+dotenv:any componect using env should have acces to the file
+it will read and attachtes to the file while processing
+-process is an object which is avilable globally in node js it has all the nev varibale files
+note: shoud we commit to git , it should never be commited since it has all sensible information
+
+
+
+
+*/
+// //
