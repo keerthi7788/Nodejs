@@ -33,10 +33,12 @@ Amazon:
     -> Books
       -> Autors
 
-      ? ==> quer params when we use optional . it wont effec if not pass. its kay value pair kind of
+      ? ==> quer params when we use optional . it wont effec if not pass. its okay value pair kind of
 
       ### Get the average rating of all the students for a course
       Get v1/courses/{:courses}/ratings?type=avg
 
 
 
+25/01/2025"
+- 
