@@ -18,10 +18,8 @@ Api status codes:
 Restfull endpoint:
 http://localhost/restfulservice/v1/users/{id}
 restfulservice-application context 
-v1 version:y we have: any breaking changes & 
+v1 version:y we have: any breaking changes
 users - resourse:
 {id}-
-what happen if we have many like 40+ versions: single change takes times to push it to all versions
-- 
 
 */
